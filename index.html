@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Responsive Sticky Navbar</title>
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+    
+<body>  
+    <div class="wrapper">
+        <header id="home">
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="logo">
+                    Marco Barrera
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href=#about_section>About</a></li>
+                        <li><a href=#portfolio>Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <div id="about_section">
+            <h1 id="title">Marco Barrera</h1><hr>
+            <div id="img-div">
+                <img src="https://image.ibb.co/cAOz2e/prof.jpg" id="profile_image">
+                <p id="img-caption">Front-End Developer</p><hr>
+                <p id="img-description">My name is Marco Barrera and I'm a developer from Berkeley, California.<br> I am currently a student at UC Berkeley aspiring to go into software engineering.<br> The languages that you see on this app are HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+        
+        <div id="portfolio">
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+      // Menu-toggle button
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+      // Scrolling Effect
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+    </script>
+</body>
+</html>
