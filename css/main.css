@@ -67,9 +67,11 @@ p {
 }
 .teasize {height: 150px;
 }
-.post {
+#post {
     border: solid;
     border-color: black;
+    width: 100%;
+    padding-left: 0px;
 }
 .logo {
     position: fixed;
