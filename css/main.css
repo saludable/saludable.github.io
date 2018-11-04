@@ -61,6 +61,16 @@ p {
     background-color: gray;
     text-align: center;
 }
+.submitir {color:white;}
+.comments {
+    background-color: white;
+}
+.teasize {height: 150px;
+}
+.post {
+    border: solid;
+    border-color: black;
+}
 .logo {
     position: fixed;
     float: left;
